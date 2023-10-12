@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Order Display"
+client_id = "2f2f6d57b9fdba30f728d243219ea43d"
+application_url = "https://writers-technological-token-korean.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_orders,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://writers-technological-token-korean.trycloudflare.com/auth/callback",
+  "https://writers-technological-token-korean.trycloudflare.com/auth/shopify/callback",
+  "https://writers-technological-token-korean.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "wearbar.myshopify.com"
